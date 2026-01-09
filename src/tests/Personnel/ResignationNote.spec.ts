@@ -182,18 +182,15 @@ test.describe.serial("Module ResignationNote", () => {
     await ResignPage.editResignType();
   });
 
- test("TC-028: ทดลอง ลบประเภทการลาออก", async () => {
-    await loginPage.login();
-    await ResignPage.openResignModule();
-    await ResignPage.deleteResignType();
-  });
-
   test("TC-029: ทดลอง ยกเลิกการลบประเภทการลาออก", async () => {
     await loginPage.login();
     await ResignPage.openResignModule();
     await ResignPage.cancelDeleteResignType();
   });
 
-
+  test("TC-028: ทดลอง ลบประเภทการลาออก", async () => {
+    await loginPage.login();
+    await ResignPage.openResignModule();
+    await ResignPage.deleteResignType();
+  });
 });
-

@@ -557,7 +557,7 @@ export class ResignationNote {
 
     const row = frame
       .locator(SelectorResignationNote.ResignTypeTable, {
-        has: frame.locator("td div", { hasText: resignData.th_editResignType }),
+        has: frame.locator("td div", { hasText: resignData.th_InputResignType }),
       })
       .first();
 
