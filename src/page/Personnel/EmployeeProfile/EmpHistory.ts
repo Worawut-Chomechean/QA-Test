@@ -17,6 +17,7 @@ export class PersonnelPage {
     await this.page.locator(SelEmp.PersonnelButton).click();
     await this.page.waitForTimeout(5000);
   }
+  
   async addPersonnelrequest(data: PersonalData = singlePersonalData) {
     console.log('=== เพิ่มข้อมูลพนักงาน ===');
 

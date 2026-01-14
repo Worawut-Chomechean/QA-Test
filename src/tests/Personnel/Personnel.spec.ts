@@ -5,7 +5,7 @@ import { LoginPage as Login } from '../../page/Login/Login.ts';
 
 
 
-test.describe.serial('Module Personnel', () => {
+test.describe('Module Personnel', () => {
   let Psnpage!: PersonnelPage;
   let loginPage!: Login;
 
@@ -20,35 +20,7 @@ test.describe.serial('Module Personnel', () => {
     await Psnpage.openPersonnelModule();
     await Psnpage.addPersonnelrequest();
 
-
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   test('เพิ่ม พนง ที่บังคับ', async ({ page }) => {
@@ -56,6 +28,7 @@ test.describe.serial('Module Personnel', () => {
     await page.locator('#ctl00_ContentTitleRight_RadToolBar1 > div > div > div > ul > li:nth-child(1) > a').click();
     await page.locator('#ctl00_MainContent_Combo_Initial_Input').click();
     await page.getByRole('listitem').filter({ hasText: 'นาย Mr.' }).click();
+
 
     // 3. กรอกชื่อ-นามสกุล (ไทย/อังกฤษ)
     await page.fill('#MainContent_Txt_FnameT', 'เพลไรท์');
