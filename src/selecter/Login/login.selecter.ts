@@ -1,9 +1,8 @@
 
 
 export const url = {
-    UrlTiger: 'https://connect.tigersoftcloud.com/NEW2/TigerOpenspace/login/F47A8269A7',
-    UrlHome: 'https://connect.tigersoftcloud.com/New2/TigerOpenspaceHRM/Mobile/Main/NewdefaultTimeStandard_m.aspx'
-    
+    UrlTiger: 'https://connect.tigersoftcloud.com/NEW5/TigerOpenspace/login/DC60AB0918',
+    UrlHome: 'https://connect.tigersoftcloud.com/NEW5/TigerOpenspaceHRM/Mobile/Main/NewdefaultTimeStandard_m.aspx'    
 };
 
 
