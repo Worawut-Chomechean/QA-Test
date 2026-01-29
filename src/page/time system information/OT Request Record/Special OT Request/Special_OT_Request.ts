@@ -70,8 +70,10 @@ export class Special_OT_Request {
     }
   }
 
-  async addademy() {
+  async addademy() { 
+    await this.page.waitForTimeout(1000);
     await this.page.locator(S.adademy).click();
+  
   }
 
   async pickDate(startDate: string) {
