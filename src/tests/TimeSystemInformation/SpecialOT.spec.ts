@@ -36,7 +36,7 @@ test.describe.serial('Special OT Request - OT Time', () => {
         await specialOT.selectEmployee(SpecialOTTestCases[2].employee);
         await specialOT.save( )
     });
-    test('TC204 Special OT Request - OT Time', async () => {
+    test('TC04 Special OT Request - OT Time', async () => {
         await specialOT.addademy();
         await specialOT.fillForm(SpecialOTTestCases[3]);
         await specialOT.selectEmployee(SpecialOTTestCases[3].employee);
