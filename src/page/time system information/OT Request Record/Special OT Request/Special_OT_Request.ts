@@ -23,7 +23,6 @@ export class Special_OT_Request {
     await this.page.locator(S.dropdownOTType).click();
     await this.page.locator(S.optionSpecialOT).click();
 
-    // ✅ ใช้ "ทั้งหมด" เป็นจุดเริ่มต้นแทน buttonAddEmployee
     await this.page.locator(S.scopeAllRadio).click();
   }
 
@@ -61,7 +60,7 @@ export class Special_OT_Request {
     }
 
     if (scope.type === 'เลือกข้อมูล') {
-      // ตอนนี้ selector ยังไม่มี radio ตัวนี้ → อย่าเรียก
+
       await this.clickAndPick(
         S.dataFromDropdown,
         S.dataFromOption(scope.from),
