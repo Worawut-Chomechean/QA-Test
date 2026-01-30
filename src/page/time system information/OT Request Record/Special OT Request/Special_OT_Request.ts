@@ -77,10 +77,8 @@ export class Special_OT_Request {
   }
 
   async pickDate(startDate: string) {
-    // const day = this.getDay(startDate);
     await this.page.locator(S.openCalendarBtn).click(); 
     await this.page.locator(S.openCalendarBtn).fill(data.SpecialOTTestCases[0].form.startDate);
-    //await this.page.locator(`${S.calendarDay}${day}]`).click();
   }
 
   async fillForm(tc: any) {
@@ -103,7 +101,6 @@ export class Special_OT_Request {
 
 async selectEmployee(employee: string) {
   // หา tr ที่มีข้อความ employee อยู่ในแถวเดียวกัน (รหัส + ชื่อ)
-  // ใช้ hasText เพื่อให้ match ทั้งแถว ไม่ต้องแยก span
   const row = this.page.locator(
     '//*[@id="ctl00_MainContent_gexPerson_ctl00"]/tbody/tr',
     { hasText: employee },

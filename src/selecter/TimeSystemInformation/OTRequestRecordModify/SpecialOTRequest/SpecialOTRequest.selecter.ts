@@ -48,7 +48,6 @@ export const SpecialOTRequestSelector = {
 
   //Date
   openCalendarBtn: '//*[@id="MainContent_ccbDate"]',
-//calendarDay: 'MainContent_ccbDat',
 
   // OT Time
   ot1: '//*[@id="ctl00_MainContent_mkeOT1"]',
