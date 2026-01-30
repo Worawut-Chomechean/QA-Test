@@ -20,6 +20,7 @@ export class Special_OT_Request {
     await this.page.locator(S.menuTimeSystem).hover();
     await this.page.locator(S.menuOTRequestRecord).click();
 
+    await this.page.waitForTimeout(1000);
     await this.page.locator(S.dropdownOTType).click();
     await this.page.locator(S.optionSpecialOT).click();
 
